@@ -24614,13 +24614,23 @@ document.querySelectorAll('.panel_floor').forEach(p => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $('.card').each(function(e) {
-        if ($(this).hasClass('card_size_s')) {
-            $(this).css({'border-radius': '22px'})
+    // $('.card').each(function(e) {
+    //     if ($(this).hasClass('card_size_s')) {
+    //         $(this).css({'border-radius': '22px'})
+    //     } else {
+    //         $(this).css({'border-radius': '23px'})
+    //     }
+    // });
+
+    let cards = document.getElementsByClassName("card");
+    for (let card of cards) {
+        if (card.classList.contains("card_size_s")) {
+            card.style.borderRadius = '22px';
         } else {
-            $(this).css({'border-radius': '23px'})
+            card.style.borderRadius = '23px';
         }
-    });
+    }
+
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
     waterContainer.innerHTML = 
