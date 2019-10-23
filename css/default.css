@@ -246,3 +246,7 @@ header {
   height: 20px;
   background: url("../img/checked.svg");
 }
+
+.carousel-element {
+  overflow: hidden;
+}

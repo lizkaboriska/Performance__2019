@@ -24614,10 +24614,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    var carousel = $("#carousel");
-
-    carousel.owlCarousel();
-
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
     waterContainer.innerHTML = 
